@@ -1,0 +1,251 @@
+ <!-- MAIN -->
+ <main>
+
+  <div class="container" id="shop-container">
+    <div class="row">
+      <div class="col-lg-5 col-md-12">
+        <div id="shop-logo">
+          <a href="#"><img src="assets/images/products/shop-logo.png" id="shop-avatar" ></a>
+        </div>
+        <div id="shop-name">
+          <a href="#"><h2>HookAndStemCo</h2></a>
+          <button><i class="fa fa-heart" aria-hidden="true"></i> Favorite Shop</button>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12 item-thumb-container">
+        <ngx-gallery [options]="itemsGalleryOptions" [images]="itemsGalleryImages"></ngx-gallery>
+        <!-- <a href="#"><div class="item-thumb"><img src="assets/images/products/item-thumb.png"></div></a>
+        <a href="#"><div class="item-thumb"><img src="assets/images/products/item-thumb.png"></div></a>
+        <a href="#"><div class="item-thumb"><img src="assets/images/products/item-thumb.png"></div></a>
+        <a href="#"><div class="item-thumb"><img src="assets/images/products/item-thumb.png"></div></a>
+        <a href="#"><div id="item-count"><span>55</span> items</div></a> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="product-container">
+    <div class="row">
+      <div class="col-md-7">
+        <!-- image gallery -->
+        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+          <!-- <div id='carousel-custom' class='carousel slide'>
+            <div class='carousel-outer'>
+              <div class='carousel-inner'>
+                <div class='item active'>
+                  <img class="img-responsive" src='assets/images/products/product-image.png' alt='' />
+                </div>
+                <div class='item'>
+                  <img class="img-responsive" src='assets/images/products/product-image.png' alt='' />
+                </div>
+                  <div class='item'>
+                    <img class="img-responsive" src='assets/images/products/product-image.png' alt='' />
+                </div>  
+                <div class='item'>
+                  <img class="img-responsive" src='assets/images/products/product-image.png' alt='' />
+                </div>
+                <div class='item'>
+                  <img class="img-responsive" src='assets/images/products/product-image.png' alt='' />
+                </div>
+                <div class='item'>
+                  <img class="img-responsive" src='assets/images/products/product-image.png' alt='' />
+                </div>
+                <div class='item'>
+                  <img class="img-responsive" src='assets/images/products/product-image.png' alt='' />
+                </div>
+                <div class='item'>
+                  <img class="img-responsive" src='assets/images/products/product-image.png' alt='' />
+                </div>
+              </div>
+        
+              <a class='left carousel-control' href='#carousel-custom' data-slide='prev'>
+                <span class='glyphicon glyphicon-chevron-left'></span>
+              </a>
+              <a class='right carousel-control' href='#carousel-custom' data-slide='next'>
+                <span class='glyphicon glyphicon-chevron-right'></span>
+              </a>
+            </div>
+              
+            <ol class='carousel-indicators'>
+              <li data-target='#carousel-custom' data-slide-to='0' class='active'><img class="more-thumbs" src='assets/images/products/item-thumb.png' alt='' /></li>
+              <li data-target='#carousel-custom' data-slide-to='1'><img class="more-thumbs" src='assets/images/products/item-thumb.png' alt='' /></li>
+              <li data-target='#carousel-custom' data-slide-to='2'><img class="more-thumbs" src='assets/images/products/item-thumb.png' alt='' /></li>
+              <li data-target='#carousel-custom' data-slide-to='3'><img class="more-thumbs" src='assets/images/products/item-thumb.png' alt='' /></li>
+              <li data-target='#carousel-custom' data-slide-to='4'><img class="more-thumbs" src='assets/images/products/item-thumb.png' alt='' /></li>
+              <li data-target='#carousel-custom' data-slide-to='5'><img class="more-thumbs" src='assets/images/products/item-thumb.png' alt='' /></li>
+              <li data-target='#carousel-custom' data-slide-to='6'><img class="more-thumbs" src='assets/images/products/item-thumb.png' alt='' /></li>
+              <li data-target='#carousel-custom' data-slide-to='7'><img class="more-thumbs" src='assets/images/products/item-thumb.png' alt='' /></li>
+            </ol>
+          </div> -->
+          <div id="watch-video">
+            <button id="watch-video-btn"><i class="fa fa-film" aria-hidden="true"></i> Watch Video</button>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="right-col">
+            <h2 id="item-short-description">Mid Century Modern Plant Stand, Hand Made in Canada, Walnut Wood, Retro Home Decor</h2>
+            <div class="row">
+              <div class="col-md-5">
+                <h2 class="price">$39.00</h2>
+              </div>
+              <div class="col-md-7">
+                <div id="ask-question-div">
+                  <button id="ask-a-question">Ask a question</button>
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <label for="quantity" class="block-label">Quantity</label>
+            <select name="quantity" id="quantity-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="size" class="block-label" id="size-label">Size</label>
+            <select name="size" id="size-select">
+              <option selected="true" disabled="true">Select an option</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="row">
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+          <div class="row" id="social-row">
+            <a href="#"><img src="assets/images/products/facebook.png" id="facebook-img">
+            <span class="social-text">Share</span></a>
+            <a href="#"><img src="assets/images/products/pinterest.png" class="social-img">
+            <span class="social-text">Save</span></a>
+            <a href="#"><img src="assets/images/products/twitter.png" class="social-img">
+            <span class="social-text">Tweet</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="listing-details-row">
+      <div class="col-md-7">
+        <div class="left-margin">
+          <div id="listing-buttons">
+            <button id="listing-details-btn" class="button-row">Listing Details</button>
+            <button class="button-row" id="listing-shop-button">Shipping Details</button>
+            <button class="button-row" id="policies-button">Policies</button>
+          </div>
+        </div>
+        <div class="col-md-5">
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="row">
+          <div class="col-xs-5">
+            <div class="details-headings left-margin">
+              Purchase Price
+            </div>
+            <div class="details-headings left-margin">
+              Quantity Available
+            </div>
+            <div class="details-headings left-margin">
+              Available Until
+            </div>
+            <div class="details-headings left-margin">
+              Available Since
+            </div>
+            <div class="details-headings left-margin">
+              Listed By
+            </div>
+          </div>
+          <div class="col-xs-7">
+            <div class="item-details">
+            $8.99 USD <span class="status">Status: Active</span>
+            </div>
+            <div class="item-details">
+            5
+            </div>
+            <div class="item-details">
+            Thursday 8/17/17 12:34pm
+            </div>
+            <div class="item-details">
+            Wednesday 4/19/17 12:34pm
+            </div>
+            <div class="item-details">
+            Hook&StemCo <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div id="favorite-item-row" class="left-margin">
+          <button id="favorite-btn">Favorite Item</button>
+          <button id="sign-in-btn">Sign In</button>
+        </div>
+        <div id="description" class="left-margin">
+          <p>Description</p>
+          <p>****Ceramic pot not included****</p>
+          <p>Dimensions:<br>
+          Height - 17"</p>
+          <p>Width - Select the width from the dropdown based on your pot size<br>
+          (For example, if you have a 12" pot, order the 12" width as we add a quarter of an inch so you have some wiggle room).</p>
+          <p>*If you have a specific pot size not listed, just send us a message and we can work out a custom order*</p>
+          <p>**Please note the grain & colour of the wood will vary slightly. All of our products are hand made, they are not mass produced. It's what makes each stand unique.</p>
+          <p>***The images used on the listing are a representation of the item and do not feature the exact item that will ship.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-5">
+        <div id="sidebar-logo">
+          <a href="#"><img src="assets/images/products/shop-logo.png"></a>
+        </div>
+        <div id="sidebar-shop-name">
+          <a href="#"><p>HookAndStemCo</p></a>
+        </div>
+        <div class="row">
+          <div id="shop-sidebar">
+            <div class="col-xs-6">
+              <a href="#"><img src="assets/images/products/side-thumb.png" class="img-responsive">
+              <div class="caption">
+                <div class="sidebar-title">Mid Century Mod...</div>
+                <div class="sidebar-price">$39.00</div>
+              </div></a>
+              <a href="#"><img src="assets/images/products/side-thumb.png" class="img-responsive">
+              <div class="caption">
+                <div class="sidebar-title">Mid Century Mod...</div>
+                <div class="sidebar-price">$39.00</div>
+              </div></a>
+              <a href="#"><img src="assets/images/products/side-thumb.png" class="img-responsive">
+              <div class="caption">
+                <div class="sidebar-title">Mid Century Mod...</div>
+                <div class="sidebar-price">$39.00</div>
+              </div></a>
+              <a href="#"><img src="assets/images/products/side-thumb.png" class="img-responsive">
+              <div class="caption">
+                <div class="sidebar-title">Mid Century Mod...</div>
+                <div class="sidebar-price">$39.00</div>
+              </div></a>
+            </div>
+            <div class="col-xs-6">
+              <a href="#"><img src="assets/images/products/side-thumb.png" class="img-responsive">
+              <div class="caption">
+                <div class="sidebar-title">Mid Century Mod...</div>
+                <div class="sidebar-price">$39.00</div>
+              </div></a>
+              <a href="#"><img src="assets/images/products/side-thumb.png" class="img-responsive">
+              <div class="caption">
+                <div class="sidebar-title">Mid Century Mod...</div>
+                <div class="sidebar-price">$39.00</div>
+              </div></a>
+              <a href="#"><img src="assets/images/products/side-thumb.png" class="img-responsive">
+              <div class="caption">
+                <div class="sidebar-title">Mid Century Mod...</div>
+                <div class="sidebar-price">$39.00</div>
+              </div></a>
+              <a href="#"><img src="assets/images/products/side-thumb.png" class="img-responsive">
+              <div class="caption">
+                <div class="sidebar-title">Mid Century Mod...</div>
+                <div class="sidebar-price">$39.00</div>
+              </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

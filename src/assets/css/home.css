@@ -1,0 +1,363 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/*Carousel Controls*/
+
+.carousel-control > img{        
+    position: absolute;
+    /*set position of image from top to be 50%...*/
+    top: 50%;
+    /*and then shift it down to make it perfectly center.*/
+    transform: translate(-50%, -50%);
+
+    z-index: 5;
+    display: inline-block;
+}
+
+.carousel-control {
+    width: 7%;
+}
+
+/*Carousel 1*/
+
+#carousel-1 .carousel-control.right, #carousel-1 .carousel-control.left { 
+    opacity: 1;
+}
+
+#carousel-1 {
+    width: 100%;
+}
+
+#carousel-1 .item {
+    width: 100%;
+    height: 400px;
+    background: url(../images/hero/white-roses-antique.png) no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#carousel-1 .carousel-control.left, #carousel-1 .carousel-control.right {
+    background-image: none
+}
+
+#carousel-1 .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    text-align: left;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+@media only screen and (min-width: 768px) {
+    #carousel-1 .carousel-caption {
+        right: 15%;
+        left: 15%;
+    }
+}
+
+#carousel-1 .carousel-caption button {
+    background: #D8E2DC;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Montserrat-Light;
+    color: #1E1E1E;
+}
+
+#carousel-1 .carousel-caption h2 {
+    font-family: Adobe-Garamond-Pro-Italic;
+    font-size: 60px;
+}
+
+#carousel-1 .carousel-caption p {
+    font-family: Montserrat-Light;
+    font-size: 24px;
+    width: 60%;
+    /*padding-bottom: 10px;*/
+}
+
+@media only screen and (max-width: 768px) {
+    #carousel-1 .item {
+    background: url(../images/hero/white-roses-antique.png) no-repeat;
+    background-position: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #carousel-1 .item {
+        height: 300px;
+    }
+    #carousel-1 .carousel-caption p {
+        display: none;
+    }
+}
+
+/*Carousel 2*/
+
+#carousel-2 {
+    width: 100%;
+}
+
+#carousel-2 .carousel-control.left, #carousel-2 .carousel-control.right {
+    background-image: none;
+}
+
+#carousel-2 .item {
+    width: 100%;
+    height: 360.47px;
+    background: url(../images/popular-shops/thread-rings_1258x400.png) no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#carousel-2 .glyphicon.glyphicon-chevron-left {
+    color: #1e1e1e;
+}
+
+#carousel-2 .glyphicon.glyphicon-chevron-right {
+    color: #1e1e1e;
+}
+
+#carousel-2 .carousel-control.right, #carousel-2 .carousel-control.left { 
+    opacity: 1;
+}
+
+#carousel-2 .carousel-caption {
+    top: 70%;
+    left: 10%;
+    transform: translateY(-50%);
+    bottom: initial;
+    text-align: left;
+    color: white;
+    text-shadow: none;
+}
+
+#carousel-2 .carousel-caption button {
+    background: #1e1e1e;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Montserrat-Light;
+    color: #ffffff;
+}
+
+#carousel-2 .carousel-caption h2 {
+    font-family: Adobe-Garamond-Pro-Italic;
+    font-size: 40px;
+    color: #1e1e1e;
+}
+
+#carousel-2 .carousel-caption p {
+    font-family: Montserrat-Light;
+    font-size: 24px;
+    width: 40%;
+    color: #1e1e1e;
+    /*padding-bottom: 10px;*/
+}
+
+
+/*Main*/
+
+.item_containers .img-responsive {
+    width: 100%;
+    height: 100%;
+}
+
+.strike h2 {
+    padding: 20px 0;
+    text-align: center;
+    font-family: HaloHandletter;
+    font-size: 44pt;
+}
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.strike > h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > h2:before,
+.strike > h2:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #CCCCCC;
+}
+
+.strike > h2:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > h2:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.padleft {
+    padding-left: 50px;
+}
+
+a .caption {
+    color: #333;
+}
+
+.row a:hover, .row a:active, .row a:visited, .row a:link {
+    text-decoration: none;
+}
+
+.caption {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .caption {
+        font-size: 14px;
+    }
+}
+
+.container .price {
+    padding-bottom: 15px;
+}
+
+.item_containers {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .strike h2 {
+        font-size: 36pt;
+    }
+}
+
+/*Vertical align text*/
+.vcenter h3 {
+    font-family: Adobe-Garamond-Pro-Italic;
+    font-size: 50px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.vcenter button {
+    background: #D8E2DC;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Montserrat-Light;
+}
+
+.vcenter p {
+    margin-bottom: 40px;
+    font-family: Montserrat-Light;
+    font-size: 22px;
+    width: 90%;
+}
+
+.center-section {
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .img-responsive {
+        min-height: 303.45px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .center-section {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .vcenter p {
+        font-size: 18px;
+        width: 100%;
+    }
+    .padleft {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .vcenter h3 {
+        font-size: 35px;
+    }
+}
+
+#home-living_container {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 50px;
+}
+
+#popular-shops_container {
+    padding-bottom: 50px;
+}
+
+#three-col-content h4 {
+    margin-top: 40px;
+    font-family: Adobe-Garamond-Pro-Italic;
+    font-size: 34pt;
+}
+
+#three-col-content p {
+    font-family: Montserrat-Light;
+    font-size: 16px;
+    width: 95%;
+    margin-top: 15px;
+}
+
+.see-more {
+    text-align: center;
+    margin-top: 15px;
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 16px;
+}
+
+.see-more a {
+    color: #333;
+}
+
+.see-more p {
+    margin-bottom: 0;
+}
+
+.see-more span {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+    #three-col-content {
+    text-align: center;
+    }
+}
+
+.centerfix .img-responsive {
+    margin: 0 auto;
+}
+
