@@ -126,17 +126,86 @@
     </div>
     <div class="row" id="listing-details-row">
       <div class="col-md-7">
-        <div class="left-margin">
+
+        <div class="product-tabs">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" id="listing-buttons" role="tablist">
+            <li class="active"><a href="#listingDetails" data-toggle="tab">Listing Details</a></li>
+            <li><a href="#shippingDetails" data-toggle="tab">Shipping Details</a></li>
+            <li><a href="#policies" data-toggle="tab">Policies</a></li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="listingDetails">
+              <div class="row">
+                <div class="col-xs-5">
+                  <div class="details-headings left-margin">
+                    Purchase Price
+                  </div>
+                  <div class="details-headings left-margin">
+                    Quantity Available
+                  </div>
+                  <div class="details-headings left-margin">
+                    Available Until
+                  </div>
+                  <div class="details-headings left-margin">
+                    Available Since
+                  </div>
+                  <div class="details-headings left-margin">
+                    Listed By
+                  </div>
+                </div>
+                <div class="col-xs-7">
+                  <div class="item-details">
+                  $8.99 USD <span class="status">Status: Active</span>
+                  </div>
+                  <div class="item-details">
+                  5
+                  </div>
+                  <div class="item-details">
+                  Thursday 8/17/17 12:34pm
+                  </div>
+                  <div class="item-details">
+                  Wednesday 4/19/17 12:34pm
+                  </div>
+                  <div class="item-details">
+                  Hook&StemCo <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="favorite-item-row" class="left-margin">
+                <button id="favorite-btn">Favorite Item</button>
+                <button id="sign-in-btn">Sign In</button>
+              </div>
+              <div id="description" class="left-margin">
+                <p>Description</p>
+                <p>****Ceramic pot not included****</p>
+                <p>Dimensions:<br>
+                Height - 17"</p>
+                <p>Width - Select the width from the dropdown based on your pot size<br>
+                (For example, if you have a 12" pot, order the 12" width as we add a quarter of an inch so you have some wiggle room).</p>
+                <p>*If you have a specific pot size not listed, just send us a message and we can work out a custom order*</p>
+                <p>**Please note the grain & colour of the wood will vary slightly. All of our products are hand made, they are not mass produced. It's what makes each stand unique.</p>
+                <p>***The images used on the listing are a representation of the item and do not feature the exact item that will ship.</p>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="shippingDetails">Shipping Detils</div>
+            <div role="tabpanel" class="tab-pane" id="policies">Polidies</div>
+          </div>
+        </div>
+        
+        
+        <!-- <div class="left-margin">
           <div id="listing-buttons">
             <button id="listing-details-btn" class="button-row">Listing Details</button>
             <button class="button-row" id="listing-shop-button">Shipping Details</button>
             <button class="button-row" id="policies-button">Policies</button>
           </div>
-        </div>
-        <div class="col-md-5">
-        </div>
+        </div> -->
+       
       </div>
-      <div class="col-md-7">
+      <!-- <div class="col-md-7">
         <div class="row">
           <div class="col-xs-5">
             <div class="details-headings left-margin">
@@ -188,7 +257,7 @@
           <p>**Please note the grain & colour of the wood will vary slightly. All of our products are hand made, they are not mass produced. It's what makes each stand unique.</p>
           <p>***The images used on the listing are a representation of the item and do not feature the exact item that will ship.</p>
         </div>
-      </div>
+      </div> -->
       
       <div class="col-md-5">
         <div id="sidebar-logo">
