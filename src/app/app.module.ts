@@ -9,6 +9,7 @@ import { HeaderComponent } from './compoenets/header/header.component';
 import { FooterComponent } from './compoenets/footer/footer.component';
 import { ProductComponent } from './compoenets/product/product.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 const appRouts: Routes = [
 	{path: '', component: ProductComponent}
@@ -25,7 +26,8 @@ const appRouts: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRouts),
     NgxGalleryModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

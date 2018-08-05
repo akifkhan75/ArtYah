@@ -29,6 +29,16 @@ export class ProductComponent implements OnInit {
     this.productService.getproducts(1,10,{}).subscribe(data => {
       this.products = data
     })
+    /**
+     * get images from service json file
+     */
+    this.productService.getProductImages(1).subscribe(images => {
+      this.galleryImages = images
+    })
+
+    this.productService.getProductImages(1).subscribe(images => {
+      this.itemsGalleryImages = images
+    })
 
     this.itemsGalleryOptions = [
       {
@@ -58,34 +68,6 @@ export class ProductComponent implements OnInit {
           preview: false
       }
     ];
-
-    this.itemsGalleryImages = [
-        {
-          small: 'assets/images/products/item-thumb.png',
-          medium: 'assets/images/products/item-thumb.png',
-          big: 'assets/images/products/product-image.png'
-        },
-        {
-          small: 'assets/images/products/item-thumb.png',
-          medium: 'assets/images/products/item-thumb.png',
-          big: 'assets/images/products/product-image.png'
-        },
-        {
-          small: 'assets/images/products/item-thumb.png',
-          medium: 'assets/images/products/item-thumb.png',
-          big: 'assets/images/products/product-image.png'
-        },
-        {
-          small: 'assets/images/products/item-thumb.png',
-          medium: 'assets/images/products/item-thumb.png',
-          big: 'assets/images/products/product-image.png'
-        },
-        {
-          small: 'assets/images/products/item-thumb.png',
-          medium: 'assets/images/products/item-thumb.png',
-          big: 'assets/images/products/product-image.png'
-        }
-      ];
   
     this.galleryOptions = [
         {
@@ -111,33 +93,6 @@ export class ProductComponent implements OnInit {
         }
     ];
 
-    this.galleryImages = [
-        {
-          small: 'assets/images/products/item-thumb.png',
-          medium: 'assets/images/products/item-thumb.png',
-          big: 'assets/images/products/product-image.png'
-        },
-        {
-          small: 'assets/images/products/item-thumb.png',
-          medium: 'assets/images/products/item-thumb.png',
-          big: 'assets/images/products/product-image.png'
-        },
-        {
-          small: 'assets/images/products/item-thumb.png',
-          medium: 'assets/images/products/item-thumb.png',
-          big: 'assets/images/products/product-image.png'
-        },
-        {
-          small: 'assets/images/products/item-thumb.png',
-          medium: 'assets/images/products/item-thumb.png',
-          big: 'assets/images/products/product-image.png'
-        },
-        {
-          small: 'assets/images/products/item-thumb.png',
-          medium: 'assets/images/products/item-thumb.png',
-          big: 'assets/images/products/product-image.png'
-        }
-      ];
   }
 
   public viewProduct(id){
