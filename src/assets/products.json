@@ -1,0 +1,43 @@
+
+    {
+        "productId": "1",
+        "productName": "Test Product 1",
+        "sellerName": "Akif Khan",
+        "sellerImage": "string",
+        "images": [
+            {
+                "small": "assets/images/products/item-thumb.png",
+                "medium": "assets/images/products/item-thumb.png",
+                "big": "assets/images/products/product-image.png"
+              },
+              {
+                "small": "assets/images/products/item-thumb.png",
+                "medium": "assets/images/products/item-thumb.png",
+                "big": "assets/images/products/product-image.png"
+              },
+              {
+                "small": "assets/images/products/item-thumb.png",
+                "medium": "assets/images/products/item-thumb.png",
+                "big": "assets/images/products/product-image.png"
+              },
+              {
+                "small": "assets/images/products/item-thumb.png",
+                "medium": "assets/images/products/item-thumb.png",
+                "big": "assets/images/products/product-image.png"
+              },
+              {
+                "small": "assets/images/products/item-thumb.png",
+                "medium": "assets/images/products/item-thumb.png",
+                "big": "assets/images/products/product-image.png"
+              }
+        ],
+        "price": "200",
+        "status": "true",
+        "available": "10",
+        "until": "Date",
+        "since": "Date",
+        "options": [],
+        "description": "This is test Porduct to cart",
+        "shippingDetails": "test address",
+        "policies": "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+    }

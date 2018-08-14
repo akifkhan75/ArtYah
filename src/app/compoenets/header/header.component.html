@@ -15,7 +15,9 @@
             <div class="sign-in"><a href="">Sign In</a></div>
             <div class="register"><a href="">Register</a></div>
             <div class="open-shop"><a href="">Open Shop</a></div>
-            <div class="cart"><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></div>
+            <div class="cart"><a routerLink="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart 
+              <span class="cart-count">{{cartItemsCount}}</span>
+            </a></div>
         </div>
       </div>
     </div>

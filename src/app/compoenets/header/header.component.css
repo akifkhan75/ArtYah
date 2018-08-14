@@ -1,3 +1,14 @@
 body{
     
 }
+
+.cart-count{
+    background: red;
+    padding: 2px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}

@@ -5,13 +5,19 @@ import { Http } from '@angular/http';
 // import { Observable } from "rxjs";
 // import 'rxjs/add/operator/map';
 import { map } from 'rxjs/operators';
+import { CookieService } from 'ngx-cookie-service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  constructor(private _http: HttpClient, private http: Http) { }
+  public cartItems;
+  public cartItemsCount:number
+
+  constructor(private _http: HttpClient, private http: Http,private cookieService: CookieService) {
+    this.cartItemsCount = JSON.parse(this.cookieService.get('cartProducts')).length
+   }
 
   public getProduct<Product>(id:string){
     return this._http.get('url/'+id)
@@ -22,7 +28,11 @@ export class ProductService {
   }
 
   public getProductImages(id: number): any{
-    return this.http.get('../../assets/images.json').pipe(map(res => res.json())
+    return this.http.get('../../assets/images.json').pipe(map(res => res.json()))
+  }
+
+  public getProductJson(id: number): any{
+    return this.http.get('../../assets/products.json').pipe(map(res => res.json()))
   }
   
 }

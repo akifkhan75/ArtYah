@@ -81,38 +81,45 @@
           </div>
         </div>
         <div class="col-md-5">
-          <div class="right-col">
-            <h2 id="item-short-description">Mid Century Modern Plant Stand, Hand Made in Canada, Walnut Wood, Retro Home Decor</h2>
-            <div class="row">
-              <div class="col-md-5">
-                <h2 class="price">$39.00</h2>
-              </div>
-              <div class="col-md-7">
-                <div id="ask-question-div">
-                  <button id="ask-a-question">Ask a question</button>
+          <form [formGroup]="productForm" (submit)="addToCart(productForm.value)">
+              <div class="right-col">
+                  <h2 id="item-short-description">{{products.productName}}</h2>
+                  <input type="hidden" formControlName="productName" [value]="products.productName">
+                  <input type="hidden" formControlName="sellerName"  [value]="products.sellerName">
+                  <input type="hidden" formControlName="image" [value]="products.images[0].small">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <h2 class="price">{{products.price | currency}}</h2>
+                      <input type="hidden" formControlName="price" [value]="products.price">
+                    </div>
+                    <div class="col-md-7">
+                      <div id="ask-question-div">
+                        <button id="ask-a-question">Ask a question</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="row">
+                  <label for="quantity" class="block-label">Quantity</label>
+                  <select formControlName="quantity" id="quantity-select" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <label for="size" class="block-label" id="size-label">Size</label>
+                  <select formControlName="size" name="size" id="size-select">
+                    <option selected="true" disabled="true">Select an option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <button type="submit" id="add-to-cart" >ADD TO CART</button>
                 </div>
               </div>
-            </div>
-          <div class="row">
-            <label for="quantity" class="block-label">Quantity</label>
-            <select name="quantity" id="quantity-select">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
-          <div class="row">
-            <label for="size" class="block-label" id="size-label">Size</label>
-            <select name="size" id="size-select">
-              <option selected="true" disabled="true">Select an option</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
-          <div class="row">
-            <button id="add-to-cart">ADD TO CART</button>
-          </div>
+          </form>
           <div class="row" id="social-row">
             <a href="#"><img src="assets/images/products/facebook.png" id="facebook-img">
             <span class="social-text">Share</span></a>
@@ -122,7 +129,6 @@
             <span class="social-text">Tweet</span></a>
           </div>
         </div>
-      </div>
     </div>
     <div class="row" id="listing-details-row">
       <div class="col-md-7">

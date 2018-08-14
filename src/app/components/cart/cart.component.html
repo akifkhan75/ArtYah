@@ -1,0 +1,186 @@
+<div class="container">
+    <br>
+    <h2 class="text-center">2 Items in Cart</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-info" *ngFor="let item of cartItems">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-4">
+                                <h5><span class="glyphicon glyphicon-home"></span> {{item.sellerName}}</h5>
+                            </div>
+                            <div class="col-md-3 col-xs-4">
+                                <h5><span class="glyphicon glyphicon-comment"></span><a> Contact Shop</a></h5>
+                            </div>
+                            <div class="col-md-3 col-xs-4" style="float:right;">
+                                <button type="button" class="btn btn-primary btn-sm btn-block">
+                <span class="glyphicon glyphicon-share-alt"></span> Continue shopping
+                   </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-5 col-xs-12 shopimg"><img class="img-responsive center-block" src="http://placehold.it/300x300">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <h4 class="product-name"><strong>
+                            {{item.productName}} </strong></h4>
+                            <h4><small>
+                        Straight Line Measured Polished New AMAZING</small></h4>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-md-5 col-xs-4">
+                                <h6><strong>{{item.price}} <span class="text-muted">x</span> {{item.quantity}}</strong></h6>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control input-sm" value="1">
+                            </div>
+                            <div class="col-xs-2">
+                                <button type="button" id="favoritebtn" class="btn btn-link btn-xs">
+                      <i class="glyphicon glyphicon-heart-empty"></i>
+                    </button>
+                            </div>
+                            <div class="col-xs-2">
+                                <button type="button" (click)="removeCartItem(item.productName)" class="btn btn-link btn-xs">
+                    <span class="glyphicon glyphicon-trash"> </span>
+                  </button>
+                            </div>
+
+                        </div>
+                        <div class="row productdetail">
+                            <div class="col-md-6 col-sm-6 col-xs-12"><input type="checkbox" id="gift" name="feature" value="gift" checked="">
+                                <label for="gift">Is this item a gift?</label></div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <p><span class="glyphicon glyphicon-tag"></span> <a>Shop Coupons</a></p>
+                            </div>
+                            <div class="col-md-5 col-sm-6 col-xs-12"><textarea rows="2" cols="30">Add note to Shop Name (optional)
+                </textarea></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <hr>
+                    <div class="row">
+                        <div class="text-center">
+                            <div class="col-xs-9">
+                                <h6 class="text-right">Added items?</h6>
+                            </div>
+                            <div class="col-xs-3">
+                                <button type="button" class="btn btn-default btn-sm btn-block">
+                        Update cart
+                      </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row text-center">
+                        <div class="col-xs-9">
+                            <h4 class="text-right">Total <strong>{{item.price * item.quantity}}</strong></h4>
+                        </div>
+                        <div class="col-xs-3">
+                            <button type="button" class="btn btn-success btn-block">
+                  Checkout
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-4">
+                                <h5><span class="glyphicon glyphicon-home"></span> Shop Name</h5>
+                            </div>
+                            <div class="col-md-3 col-xs-4">
+                                <h5><span class="glyphicon glyphicon-comment"></span><a> Contact Shop</a></h5>
+                            </div>
+                            <div class="col-md-3 col-xs-4" style="float:right;">
+                                <button type="button" class="btn btn-primary btn-sm btn-block">
+                <span class="glyphicon glyphicon-share-alt"></span> Continue shopping
+               </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-5 col-xs-12 shopimg"><img class="img-responsive center-block" src="http://placehold.it/300x300">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <h4 class="product-name"><strong>
+                  Shofar Eland Horn 20"-22" </strong></h4>
+                            <h4><small>
+              Straight Line Measured Polished New AMAZING</small></h4>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-md-5 col-xs-4">
+                                <h6><strong>25.00 <span class="text-muted">x</span></strong></h6>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control input-sm" value="1">
+                            </div>
+                            <div class="col-xs-2">
+                                <button type="button" id="favoritebtn" class="btn btn-link btn-xs">
+              <i class="glyphicon glyphicon-heart-empty"></i>
+              </button>
+                            </div>
+                            <div class="col-xs-2">
+                                <button type="button" class="btn btn-link btn-xs">
+              <span class="glyphicon glyphicon-trash"> </span>
+                </button>
+                            </div>
+
+                        </div>
+                        <div class="row productdetail">
+                            <div class="col-md-6 col-sm-6 col-xs-12"><input type="checkbox" id="gift" name="feature" value="gift" checked="">
+                                <label for="gift">Is this item a gift?</label></div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <p><span class="glyphicon glyphicon-tag"></span> <a>Shop Coupons</a></p>
+                            </div>
+                            <div class="col-md-5 col-sm-6 col-xs-12"><textarea rows="2" cols="30">Add note to Shop Name (optional)
+               </textarea></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <hr>
+                    <div class="row">
+                        <div class="text-center">
+                            <div class="col-xs-9">
+                                <h6 class="text-right">Added items?</h6>
+                            </div>
+                            <div class="col-xs-3">
+                                <button type="button" class="btn btn-default btn-sm btn-block">
+              Update cart
+               </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row text-center">
+                        <div class="col-xs-9">
+                            <h4 class="text-right">Total <strong>$50.00</strong></h4>
+                        </div>
+                        <div class="col-xs-3">
+                            <button type="button" class="btn btn-success btn-block">
+              Checkout
+              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--container end.//-->
